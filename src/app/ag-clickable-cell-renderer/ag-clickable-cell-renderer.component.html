@@ -4,33 +4,33 @@
   
     <div #content *ngIf="isOpen" class="menu-container">
        
-        <div>
+        <div class="table-beautify">
             <table>
-                <tr>
-                    <td>Feedback Id</td>
+                <tr style="border-bottom:1px solid rgb(86, 85, 85)">
+                    <td>Feedback Id:</td>
                     <td>{{DataToRender.FeedbackId}}</td>
-                </tr>
+                </tr><br/>
                 <tr>
-                    <td>Assignee</td>
+                    <td>Assignee:</td>
                     <td><input type="text" name="" id=""></td>
-                </tr>
+                </tr><br/>
                 <tr>
-                    <td>Status</td>
+                    <td>Status:</td>
                     <td><select name="" id="">
                         <option value="open">Open</option>
                         <option value="processing">Processing</option>
                         <option value="closed">Closed</option>
                         <option value="notapplicable">Not Applicable</option>
                     </select></td>
-                </tr>
+                </tr><br/>
                 <tr>
-                    <td>Comments</td>
-                    <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
-                </tr>
+                    <td>Comments:</td>
+                    <td><textarea name="" id="" cols="15" rows="5"></textarea></td>
+                </tr><br/>
                 <tr>
                     <td></td>
                     <td><button (click)="onClickHandler()">Submit</button></td>
-                </tr>
+                </tr><br/>
             </table>
         </div>
     </div>
